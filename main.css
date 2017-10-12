@@ -1,0 +1,28 @@
+#dashboard {
+	width: 1250px;
+	margin: 0 auto; 
+}
+
+#detailsHolder {
+	display: none;
+}
+
+.good, .regular, .bad {
+	padding:5px;
+	border-radius: 5px;
+}
+
+.good {
+	background: #C6EFCE;
+	color: #006100;
+}
+
+.regular {
+	background: #FFEB9C;
+	color: #9C6500;
+}
+
+.bad {
+	background: #FFC7CE;
+	color: #9C0006;
+}

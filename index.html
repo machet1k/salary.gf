@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="myscript.js"></script>
+		<link type="text/css" rel="stylesheet" href="groundwork.css">
+		<link type="text/css" rel="stylesheet" href="main.css">
+		
+		
+	</head>
+	<body>
+		<div id="dashboard">
+			<form id="myform" class="triple-padded">
+			
+				<select id="count" class='' placeholder="Число смен" onchange='build(this.value)'>
+					<option selected value='0'>Выберите количество смен</option>
+					<script language="javascript">
+					for (var i = 1; i <= 31; i++) document.write("<option>" + i + "</option>");
+					</script>
+				</select>
+				
+				<div id="basefieldHolder">
+					<table id="basefield"></table>
+				</div>
+
+				<input id='result' type='text' readonly>
+				<input type='button' class='Success' value='Рассчитать' onClick='calc()'>	
+				<input type='button' class='Warning' value='Детали' 	onClick='showDetails()'>	
+				<input type='button' class=''		 value='Обнулить' 	onClick='clean()'>
+				
+				<div id="detailsHolder">
+					<table id="details"></table>
+				</div>
+				
+			</form>
+		</div>
+	</body>
+</html>
